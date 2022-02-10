@@ -87,9 +87,7 @@ SPtr<MbCurve3D> TrajectoryCreator::createRunway(const Tape& tape, bool isBackwar
 }
 
 SPtr<MbCurve3D> TrajectoryCreator::createLanding(MbCartPoint3D surfacePoint) const {
-	auto trajectory = _landingStrategy->createTrajectory(surfacePoint, TouchDirections::Out);
-	trajectory->Inverse();
-	return trajectory;
+	return _landingStrategy->createTrajectory(surfacePoint, TouchDirections::Out);
 }
 
 SPtr<MbCurve3D> TrajectoryCreator::createTakeoff(MbCartPoint3D surfacePoint) const {
