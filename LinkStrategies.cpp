@@ -4,6 +4,8 @@
 #include "TestingGeometry.h"
 #include "LinkStrategies.h"
 
+using namespace cad;
+
 OffsetLink::OffsetLink(const MbSurface& surface, double safeHeight) 
 	: _surface(surface) 
 	, _height(safeHeight) 	

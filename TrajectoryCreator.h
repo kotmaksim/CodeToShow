@@ -7,6 +7,9 @@
 #include "TouchStrategies.h"
 #include "LinkStrategies.h"
 
+namespace cad 
+{
+	
 /**
  * @brief Полная траектория одного тейпа.
 */
@@ -125,4 +128,6 @@ private:
 	std::unique_ptr<ITouchStrategy> _takeoffStrategy; ///< Стратегия построения выходная траектории.
 	std::unique_ptr<ILinkStrategy> _linkStrategy; ///< Стратегия построения соединительной траектории.
 };
+
+}
 

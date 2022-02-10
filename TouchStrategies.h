@@ -2,6 +2,9 @@
 
 #include <curve3d.h>
 
+namespace cad
+{
+
 /**
  * @brief Типы контактных траекторий.
 */
@@ -62,3 +65,5 @@ private:
 	const MbSurface& _surface; ///< Поверхность выкладки.
 	const double _height; ///< Безопасная высота, мм.
 };
+
+}

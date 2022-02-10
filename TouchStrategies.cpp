@@ -3,6 +3,8 @@
 #include <surface.h>
 #include <cur_line_segment3d.h>
 
+using namespace cad;
+
 NormalTouch::NormalTouch(const MbSurface& surface, double safeHeight) 
 	: _surface(surface)
   , _height(safeHeight) {

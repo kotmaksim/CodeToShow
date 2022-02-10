@@ -2,6 +2,9 @@
 
 #include <curve3d.h>
 
+namespace cad
+{
+	
 /**
  * @brief Типы соединительных траекторий
 */
@@ -71,4 +74,6 @@ private:
 	*/
 	SPtr<MbCurve3D> buildTrimmed(const MbCurve3D& curve, MbCartPoint3D fromPoint, MbCartPoint3D toPoint) const;
 };
+
+}
 

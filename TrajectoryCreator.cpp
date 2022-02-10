@@ -4,6 +4,7 @@
 #include "SimpleSparParameters.h"
 #include "TestingGeometry.h"
 
+using namespace cad;
 
 TrajectoryCreator::TrajectoryCreator(const std::list<PlyPass>& plyPasses, const MbSurface& surface)
 	:_plyPasses(plyPasses)
