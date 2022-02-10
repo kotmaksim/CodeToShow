@@ -91,7 +91,7 @@ SPtr<MbCurve3D> TrajectoryCreator::createLanding(MbCartPoint3D surfacePoint) con
 }
 
 SPtr<MbCurve3D> TrajectoryCreator::createTakeoff(MbCartPoint3D surfacePoint) const {
-	return _takeoffStrategy->createTrajectory(surfacePoint, TouchDirections::Our);
+	return _takeoffStrategy->createTrajectory(surfacePoint, TouchDirections::Out);
 }
 
 SPtr<MbCurve3D> TrajectoryCreator::createLink(MbCartPoint3D sourcePoint, MbCartPoint3D targetPoint) const {
